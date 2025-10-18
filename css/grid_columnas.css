@@ -7,5 +7,28 @@ main section:nth-child(2n+1) {
 }
 
 /* Grid COLUMNAS */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ; 
+    grid-template-rows: 100px 100px 100px 100px; 
+    place-items: center strech;
+}
 
 
+#datosgenerales {
+    grid-column: span 6;  
+    
+}
+
+
+#habilidadespersonales,#conocimientos {
+    grid-column: span 3;
+}
+
+#habilidadesprogramacion,
+#proyectosanteriores,#trabajosanteriores {
+    grid-column: span 2; 
+}
+#idiomas,#medioscontacto {
+  grid-column: span 3;
+}
